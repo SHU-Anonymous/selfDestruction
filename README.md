@@ -1,0 +1,2 @@
+# selfDestruction
+selfDestruction
