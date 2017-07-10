@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/linuxClient.dir/main.c.obj"
+  "CMakeFiles/linuxClient.dir/main.c.o"
   "linuxClient.pdb"
-  "linuxClient.exe"
-  "linuxClient.exe.manifest"
-  "liblinuxClient.dll.a"
+  "linuxClient"
 )
 
 # Per-language clean rules from dependency scanning.

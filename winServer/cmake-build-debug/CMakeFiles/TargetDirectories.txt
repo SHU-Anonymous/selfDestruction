@@ -1,3 +1,3 @@
-D:/GitHub/selfDestruction/winServer/cmake-build-debug/CMakeFiles/winServer.dir
-D:/GitHub/selfDestruction/winServer/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/GitHub/selfDestruction/winServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lixin/GitHub/selfDestruction/winServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lixin/GitHub/selfDestruction/winServer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lixin/GitHub/selfDestruction/winServer/cmake-build-debug/CMakeFiles/winServer.dir

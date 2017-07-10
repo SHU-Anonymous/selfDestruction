@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/winServer.dir/main.c.obj"
+  "CMakeFiles/winServer.dir/main.c.o"
   "winServer.pdb"
-  "winServer.exe"
-  "winServer.exe.manifest"
-  "libwinServer.dll.a"
+  "winServer"
 )
 
 # Per-language clean rules from dependency scanning.
