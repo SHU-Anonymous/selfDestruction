@@ -53,10 +53,6 @@ int main(int argc, char *argv[]) {
         *connectFDP = accept(listenFD, (struct sockaddr *) &clientAddress, &clientLength);
         pthread_t threadId;
         printf("Connection Accepted\n");
-        /***
-            // break; After completion !
-         */
-        break;
     }
     return 0;
 }
@@ -78,10 +74,6 @@ void *threadSend(void *varGroup) {
         printf("Instruction: ");
         fgets(temp, 100, stdin);
         send(connectionFD, temp, 100, 0);
-        /***
-            // break; After completion !
-         */
-        break;
     }
 }
 
@@ -94,9 +86,5 @@ void *threadReceive(void *varGroup) {
         if (iData > 0) {
             printf("Respond: \n%s\n", temp);
         }
-        /***
-            // break; After completion !
-         */
-        break;
     }
 }

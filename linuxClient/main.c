@@ -44,6 +44,19 @@ void *threadSend(void *varGroup) {
     int idata;
     char temp[100];
     while (1) {
-        fgets(temp,100,)
+        fgets(temp, 100, stdin);
+        send(connectionFD, temp, 100, 0);
+    }
+}
+
+void *threadReceieve(void *varGroup) {
+    char temp[100];
+    int connectionFD = *((int *) varGroup);
+    while (1) {
+        int iData = 0;
+        iData = recv(connectionFD, temp, 100, 0);
+        if (iData > 0) {
+            printf("Instruction :\n%s\n", temp);
+        }
     }
 }
