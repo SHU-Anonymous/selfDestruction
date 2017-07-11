@@ -1,3 +1,7 @@
+//
+// Created by 李欣 on 2017/7/10.
+//
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
@@ -10,11 +14,11 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#define MAXLINE 100
+#define MAX_LINE 100
 
 void *threadSend(void *varGroup);
 
-void *threadReceieve(void *varGroup);
+void *threadReceive(void *varGroup);
 
 int main(int argc, char *argv[]) {
     int *clientFDP;
@@ -25,7 +29,7 @@ int main(int argc, char *argv[]) {
     memset((char *) &serverAddress, 0, sizeof(serverAddress));
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(5005);
-    serverAddress.sin_addr.s_addr = inet_addr("192.168.110.101");
+    serverAddress.sin_addr.s_addr = inet_addr("127.0.0.1");
     if (connect(*clientFDP, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) < 0) {
         printf("Connection Error\n");
         exit(1);
@@ -34,14 +38,14 @@ int main(int argc, char *argv[]) {
     printf("Connection Succeeded\n");
     while (1) {
         pthread_create(&threadIdSend, NULL, threadSend, clientFDP);
-        pthread_create(&threadIdReceive, NULL, threadIdReceive, clientFDP);
+        pthread_create(&threadIdReceive, NULL, threadReceive, clientFDP);
     }
     return EXIT_SUCCESS;
 }
 
 void *threadSend(void *varGroup) {
     int connectionFD = *((int *) varGroup);
-    int idata;
+    int iData;
     char temp[100];
     while (1) {
         fgets(temp, 100, stdin);
@@ -49,14 +53,14 @@ void *threadSend(void *varGroup) {
     }
 }
 
-void *threadReceieve(void *varGroup) {
+void *threadReceive(void *varGroup) {
     char temp[100];
     int connectionFD = *((int *) varGroup);
     while (1) {
         int iData = 0;
         iData = recv(connectionFD, temp, 100, 0);
         if (iData > 0) {
-            printf("Instruction :\n%s\n", temp);
+            printf("Instruction :\n%s", temp);
         }
     }
 }

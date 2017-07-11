@@ -1,12 +1,24 @@
-#include <stdio.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <errno.h>
+//#include <string.h>
+//#include <unistd.h>
+//#include <windows.h>
+//#include <winsock.h>
+//#include <winsock2.h>
+//#include <sys/types.h>
+//#include <pthread.h>
+
 #include <stdlib.h>
+#include <stdio.h>
 #include <errno.h>
 #include <string.h>
 #include <unistd.h>
-#include <windows.h>
-#include <winsock.h>
-#include <winsock2.h>
+#include <netdb.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
 #include <sys/types.h>
+#include <arpa/inet.h>
 #include <pthread.h>
 
 #define PORT 5005
@@ -34,7 +46,7 @@ int main(int argc, char *argv[]) {
     serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
     serverAddress.sin_port = htons(PORT);
 
-    if (bind(listenFD, (struct socketAddress *) &serverAddress, sizeof(serverAddress)) < 0) {
+    if (bind(listenFD, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) < 0) {
         perror("Connection Error");
         exit(1);
     }
@@ -53,8 +65,9 @@ int main(int argc, char *argv[]) {
         *connectFDP = accept(listenFD, (struct sockaddr *) &clientAddress, &clientLength);
         pthread_t threadId;
         printf("Connection Accepted\n");
+        pthread_create(&threadId, NULL, thread, connectFDP);
     }
-    return 0;
+    EXIT_SUCCESS;
 }
 
 void *thread(void *varGroup) {
@@ -78,8 +91,8 @@ void *threadSend(void *varGroup) {
 }
 
 void *threadReceive(void *varGroup) {
-    char temp[100];
     int connectionFD = *((int *) varGroup);
+    char temp[100];
     while (1) {
         int iData = 0;
         iData = recv(connectionFD, temp, 100, 0);

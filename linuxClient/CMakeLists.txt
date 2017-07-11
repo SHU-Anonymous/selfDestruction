@@ -4,4 +4,5 @@ project(linuxClient)
 set(CMAKE_C_STANDARD 11)
 
 set(SOURCE_FILES main.c)
+
 add_executable(linuxClient ${SOURCE_FILES})
