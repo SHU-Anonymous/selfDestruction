@@ -2,8 +2,8 @@
 // Created by 李欣 on 2017/7/11.
 //
 
-#ifndef LINUXSERVER_SOCKETSERVICE_H
-#define LINUXSERVER_SOCKETSERVICE_H
+#ifndef LINUXCLIENT_SOCKETCONSUME_H
+#define LINUXCLIENT_SOCKETCONSUME_H
 
 #include <iostream>
 #include <cstdio>
@@ -18,31 +18,24 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-class socketService {
+class socketConsume {
 private:
-    int _listenFD;
+    int *_clientFDP;
     struct sockaddr_in _serverAddress;
-    struct sockaddr_in _clientAddress;
-    socklen_t _clientLength;
-    int *_connectFDP;
 public:
-    socketService();
+    socketConsume();
 
-    ~socketService();
+    ~socketConsume();
 
     void setPort(int Port);
 
-    void bindSocket();
+    void setServer(const char *Address);
 
-    void listenClient();
-
-    void acceptClient();
+    void connectServer();
 };
-
-void *threadMain(void *varGroup);
 
 void *threadSend(void *varGroup);
 
 void *threadReceive(void *varGroup);
 
-#endif //LINUXSERVER_SOCKETSERVICE_H
+#endif //LINUXCLIENT_SOCKETCONSUME_H

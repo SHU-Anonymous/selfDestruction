@@ -31,11 +31,11 @@ int main(int argc, char *argv[]) {
     serverAddress.sin_port = htons(5005);
     serverAddress.sin_addr.s_addr = inet_addr("127.0.0.1");
     if (connect(*clientFDP, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) < 0) {
-        printf("Connection Error\n");
+        perror("Connection Error");
         exit(1);
     }
     pthread_t threadIdSend, threadIdReceive;
-    printf("Connection Succeeded\n");
+    printf("Connection Established");
     while (1) {
         pthread_create(&threadIdSend, NULL, threadSend, clientFDP);
         pthread_create(&threadIdReceive, NULL, threadReceive, clientFDP);

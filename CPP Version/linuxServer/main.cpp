@@ -3,8 +3,7 @@
 
 using namespace std;
 
-
-int main() {
+int main(int argc, char *argv[]) {
     cout << "\033[1;32m" << "[*] Establishing Server..." << "\033[0m" << endl;
     socketService sockSrv;
     int port;
@@ -12,9 +11,9 @@ int main() {
     cin >> port;
     cout << "\033[0m";
     sockSrv.setPort(port);
-    sockSrv.bindSokcet();
+    sockSrv.bindSocket();
     sockSrv.listenClient();
     cout << "\033[1;32m" << "[+] Server Established" << "\033[0m" << endl;
     sockSrv.acceptClient();
-    return 0;
+    return EXIT_SUCCESS;
 }

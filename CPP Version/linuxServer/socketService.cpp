@@ -12,20 +12,20 @@ socketService::socketService() {
         // 1 stands for Socket Error
     }
     memset((char *) &_serverAddress, 0, sizeof(_serverAddress));
+    _serverAddress.sin_family = PF_INET;
+    _serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
 }
 
 socketService::~socketService() {
-    close(*_connectFDP);
+    shutdown(*_connectFDP, SHUT_RDWR);
+    shutdown(_listenFD, SHUT_RDWR);
 }
 
-void socketService::setPort(int PORT) {
-    _port = PORT;
+void socketService::setPort(int Port) {
+    _serverAddress.sin_port = htons(Port);
 }
 
-void socketService::bindSokcet() {
-    _serverAddress.sin_family = PF_INET;
-    _serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
-    _serverAddress.sin_port = htons(_port);
+void socketService::bindSocket() {
     if (bind(_listenFD, (struct sockaddr *) &_serverAddress, sizeof(_serverAddress)) < 0) {
         perror("\033[1;31m[-] Connection Error\033[0m");
         exit(2);
@@ -42,28 +42,24 @@ void socketService::listenClient() {
     }
 }
 
-pthread_t _threadIdMain, _threadIdSend, _threadIdReceive;
-
-void *threadMain(void *varGroup);
-
-void *threadSend(void *varGroup);
-
-void *threadReceive(void *varGroup);
-
 void socketService::acceptClient() {
     _clientLength = sizeof(_clientAddress);
     while (true) {
         _connectFDP = (int *) malloc(sizeof(int));
         *_connectFDP = accept(_listenFD, (struct sockaddr *) &_clientAddress, &_clientLength);
-        std::cout << "\033[1;32m" << "[+] Connection Accepted" << "\033[0m" << std::endl;
+        std::cout << "\033[1;32m" << "[+] Connection Accepted From: " << inet_ntoa(_clientAddress.sin_addr) << "\033[0m"
+                  << std::endl;
         getchar();
-        pthread_create(&_threadIdMain, NULL, threadMain, _connectFDP);
+        pthread_t _threadIdMain;
+        pthread_create(&_threadIdMain, nullptr, threadMain, _connectFDP);
     }
 }
 
 void *threadMain(void *varGroup) {
-    pthread_create(&_threadIdSend, NULL, threadSend, varGroup);
-    pthread_create(&_threadIdReceive, NULL, threadReceive, varGroup);
+    pthread_t _threadIdSend, _threadIdReceive;
+    pthread_create(&_threadIdSend, nullptr, threadSend, varGroup);
+    pthread_create(&_threadIdReceive, nullptr, threadReceive, varGroup);
+    return nullptr;
 }
 
 void *threadSend(void *varGroup) {
@@ -72,18 +68,22 @@ void *threadSend(void *varGroup) {
     while (true) {
         std::cout << "\033[1;32m" << "[*] Instructions: " << "\033[0m" << std::endl << "\033[1;36m";
         fgets(buffer, 100, stdin);
+        std::cout << "\033[0m";
         send(connectionFD, buffer, 100, 0);
     }
+    return nullptr;
 }
 
 void *threadReceive(void *varGroup) {
     int connectionFD = *((int *) varGroup);
     char buffer[100];
     while (true) {
-        int inData = 0;
-        inData = recv(connectionFD, buffer, 100, 0);
+        int inData;
+        inData = static_cast<int>(recv(connectionFD, buffer, 100, 0));
         if (inData > 0) {
-            std::cout << "\033[1;32m" << "[*] Respond: " << "\033[0m" << "\033[1;36m" << buffer << std::endl;
+            std::cout << "\033[1;32m" << "[*] Respond: " << "\033[0m" << "\033[1;36m" << buffer << "\033[0m"
+                      << std::endl;
         }
     }
+    return nullptr;
 }
