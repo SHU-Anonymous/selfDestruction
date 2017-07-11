@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
     pthread_t threadIdSend, threadIdReceive;
-    printf("Connection Established");
+    printf("Connection Established\n");
     while (1) {
         pthread_create(&threadIdSend, NULL, threadSend, clientFDP);
         pthread_create(&threadIdReceive, NULL, threadReceive, clientFDP);
