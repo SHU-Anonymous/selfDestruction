@@ -44,7 +44,7 @@ public:
 
     bool threadSend(const char *buffer);
 
-    bool threadRecieve(char *buffer);
+    bool threadReceive(char *buffer);
 };
 
 

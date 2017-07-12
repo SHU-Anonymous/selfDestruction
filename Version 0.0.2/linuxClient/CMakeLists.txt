@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCE_FILES
         main.cpp
-        socketConsume.cpp
-        socketConsume.h
+        socketCombined.cpp
+        socketCombined.h
         mainClient.cpp
         mainClient.h
         executioner.cpp

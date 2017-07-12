@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lixin/GitHub/selfDestruction/C Version/linuxServer
+# Install script for directory: /Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

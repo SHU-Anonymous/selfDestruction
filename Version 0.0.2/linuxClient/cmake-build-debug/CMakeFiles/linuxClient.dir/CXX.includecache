@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.cpp
+executioner.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.h
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.h
+iostream
+-
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/main.cpp
+iostream
+-
+executioner.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.h
+socketCombined.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.h
+mainClient.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.h
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.cpp
+mainClient.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.h
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.h
+executioner.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.h
+socketCombined.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.h
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.cpp
+socketCombined.h
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.h
+
+/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.h
+iostream
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+cerrno
+-
+unistd.h
+-
+netdb.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+pthread.h
+-
+

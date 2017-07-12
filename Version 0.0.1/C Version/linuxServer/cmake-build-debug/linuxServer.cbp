@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug"/>
+				<Option working_dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug"/>
+				<Option working_dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug"/>
+				<Option working_dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="linuxServer">
-				<Option output="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug/linuxServer" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug"/>
+				<Option output="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug/linuxServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 linuxServer"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 linuxServer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="linuxServer/fast">
-				<Option output="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug/linuxServer" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug"/>
+				<Option output="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug/linuxServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,17 +75,17 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 linuxServer/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 linuxServer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lixin/GitHub/selfDestruction/Version\ 0.0.1/C\ Version/linuxServer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/main.c">
+		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/main.c">
 			<Option target="linuxServer"/>
 		</Unit>
-		<Unit filename="/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/CMakeLists.txt">
+		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

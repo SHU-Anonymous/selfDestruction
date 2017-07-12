@@ -97,10 +97,10 @@
 		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.h">
 			<Option target="linuxClient"/>
 		</Unit>
-		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketConsume.cpp">
+		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.cpp">
 			<Option target="linuxClient"/>
 		</Unit>
-		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketConsume.h">
+		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.h">
 			<Option target="linuxClient"/>
 		</Unit>
 		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/CMakeLists.txt">

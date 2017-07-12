@@ -177,33 +177,6 @@ socketCombined.cpp.s:
 	$(MAKE) -f CMakeFiles/linuxServer.dir/build.make CMakeFiles/linuxServer.dir/socketCombined.cpp.s
 .PHONY : socketCombined.cpp.s
 
-socketService.o: socketService.cpp.o
-
-.PHONY : socketService.o
-
-# target to build an object file
-socketService.cpp.o:
-	$(MAKE) -f CMakeFiles/linuxServer.dir/build.make CMakeFiles/linuxServer.dir/socketService.cpp.o
-.PHONY : socketService.cpp.o
-
-socketService.i: socketService.cpp.i
-
-.PHONY : socketService.i
-
-# target to preprocess a source file
-socketService.cpp.i:
-	$(MAKE) -f CMakeFiles/linuxServer.dir/build.make CMakeFiles/linuxServer.dir/socketService.cpp.i
-.PHONY : socketService.cpp.i
-
-socketService.s: socketService.cpp.s
-
-.PHONY : socketService.s
-
-# target to generate assembly for a file
-socketService.cpp.s:
-	$(MAKE) -f CMakeFiles/linuxServer.dir/build.make CMakeFiles/linuxServer.dir/socketService.cpp.s
-.PHONY : socketService.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,9 +192,6 @@ help:
 	@echo "... socketCombined.o"
 	@echo "... socketCombined.i"
 	@echo "... socketCombined.s"
-	@echo "... socketService.o"
-	@echo "... socketService.i"
-	@echo "... socketService.s"
 .PHONY : help
 
 

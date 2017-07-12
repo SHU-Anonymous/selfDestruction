@@ -204,32 +204,32 @@ mainClient.cpp.s:
 	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/mainClient.cpp.s
 .PHONY : mainClient.cpp.s
 
-socketConsume.o: socketConsume.cpp.o
+socketCombined.o: socketCombined.cpp.o
 
-.PHONY : socketConsume.o
+.PHONY : socketCombined.o
 
 # target to build an object file
-socketConsume.cpp.o:
-	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketConsume.cpp.o
-.PHONY : socketConsume.cpp.o
+socketCombined.cpp.o:
+	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketCombined.cpp.o
+.PHONY : socketCombined.cpp.o
 
-socketConsume.i: socketConsume.cpp.i
+socketCombined.i: socketCombined.cpp.i
 
-.PHONY : socketConsume.i
+.PHONY : socketCombined.i
 
 # target to preprocess a source file
-socketConsume.cpp.i:
-	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketConsume.cpp.i
-.PHONY : socketConsume.cpp.i
+socketCombined.cpp.i:
+	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketCombined.cpp.i
+.PHONY : socketCombined.cpp.i
 
-socketConsume.s: socketConsume.cpp.s
+socketCombined.s: socketCombined.cpp.s
 
-.PHONY : socketConsume.s
+.PHONY : socketCombined.s
 
 # target to generate assembly for a file
-socketConsume.cpp.s:
-	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketConsume.cpp.s
-.PHONY : socketConsume.cpp.s
+socketCombined.cpp.s:
+	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketCombined.cpp.s
+.PHONY : socketCombined.cpp.s
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... mainClient.o"
 	@echo "... mainClient.i"
 	@echo "... mainClient.s"
-	@echo "... socketConsume.o"
-	@echo "... socketConsume.i"
-	@echo "... socketConsume.s"
+	@echo "... socketCombined.o"
+	@echo "... socketCombined.i"
+	@echo "... socketCombined.s"
 .PHONY : help
 
 

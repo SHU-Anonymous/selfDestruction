@@ -13,6 +13,7 @@ socketCombined::socketCombined() {
     }
     _clientLength = sizeof(_clientAddress);
     _connectFDP = (int *) malloc(sizeof(int));
+    *_connectFDP = socket(PF_INET, SOCK_STREAM, 0);
     memset((char *) &_serverAddress, 0, sizeof(_serverAddress));
     _serverAddress.sin_family = PF_INET;
 }
@@ -67,7 +68,7 @@ bool socketCombined::threadSend(const char *buffer) {
     return send(*_connectFDP, buffer, 100, 0) >= 0;
 }
 
-bool socketCombined::threadRecieve(char *buffer) {
+bool socketCombined::threadReceive(char *buffer) {
     return recv(*_connectFDP, buffer, 100, 0) >= 0;
 
 }

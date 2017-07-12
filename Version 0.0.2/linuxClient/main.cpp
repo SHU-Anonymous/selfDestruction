@@ -1,6 +1,6 @@
 #include <iostream>
 #include "executioner.h"
-#include "socketConsume.h"
+#include "socketCombined.h"
 #include "mainClient.h"
 
 using namespace std;

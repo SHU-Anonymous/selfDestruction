@@ -91,12 +91,6 @@
 		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketCombined.h">
 			<Option target="linuxServer"/>
 		</Unit>
-		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketService.cpp">
-			<Option target="linuxServer"/>
-		</Unit>
-		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketService.h">
-			<Option target="linuxServer"/>
-		</Unit>
 		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

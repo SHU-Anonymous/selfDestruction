@@ -6,13 +6,13 @@
 #define LINUXCLIENT_MAINCLIENT_H
 
 #include "executioner.h"
-#include "socketConsume.h"
+#include "socketCombined.h"
 
 using namespace std;
 
 class mainClient {
 private:
-    socketConsume _sockCli;
+    socketCombined _sockClient;
 public:
     mainClient();
 

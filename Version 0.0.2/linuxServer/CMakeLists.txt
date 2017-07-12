@@ -3,5 +3,10 @@ project(linuxServer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp socketService.cpp socketService.h socketCombined.cpp socketCombined.h)
+set(SOURCE_FILES
+        main.cpp
+        socketCombined.cpp
+        socketCombined.h
+        )
+
 add_executable(linuxServer ${SOURCE_FILES})

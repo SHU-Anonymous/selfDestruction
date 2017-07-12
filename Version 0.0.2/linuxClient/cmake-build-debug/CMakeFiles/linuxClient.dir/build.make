@@ -81,28 +81,28 @@ CMakeFiles/linuxClient.dir/main.cpp.o.provides: CMakeFiles/linuxClient.dir/main.
 CMakeFiles/linuxClient.dir/main.cpp.o.provides.build: CMakeFiles/linuxClient.dir/main.cpp.o
 
 
-CMakeFiles/linuxClient.dir/socketConsume.cpp.o: CMakeFiles/linuxClient.dir/flags.make
-CMakeFiles/linuxClient.dir/socketConsume.cpp.o: ../socketConsume.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linuxClient.dir/socketConsume.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxClient.dir/socketConsume.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketConsume.cpp"
+CMakeFiles/linuxClient.dir/socketCombined.cpp.o: CMakeFiles/linuxClient.dir/flags.make
+CMakeFiles/linuxClient.dir/socketCombined.cpp.o: ../socketCombined.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linuxClient.dir/socketCombined.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxClient.dir/socketCombined.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.cpp"
 
-CMakeFiles/linuxClient.dir/socketConsume.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxClient.dir/socketConsume.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketConsume.cpp" > CMakeFiles/linuxClient.dir/socketConsume.cpp.i
+CMakeFiles/linuxClient.dir/socketCombined.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxClient.dir/socketCombined.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.cpp" > CMakeFiles/linuxClient.dir/socketCombined.cpp.i
 
-CMakeFiles/linuxClient.dir/socketConsume.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxClient.dir/socketConsume.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketConsume.cpp" -o CMakeFiles/linuxClient.dir/socketConsume.cpp.s
+CMakeFiles/linuxClient.dir/socketCombined.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxClient.dir/socketCombined.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.cpp" -o CMakeFiles/linuxClient.dir/socketCombined.cpp.s
 
-CMakeFiles/linuxClient.dir/socketConsume.cpp.o.requires:
+CMakeFiles/linuxClient.dir/socketCombined.cpp.o.requires:
 
-.PHONY : CMakeFiles/linuxClient.dir/socketConsume.cpp.o.requires
+.PHONY : CMakeFiles/linuxClient.dir/socketCombined.cpp.o.requires
 
-CMakeFiles/linuxClient.dir/socketConsume.cpp.o.provides: CMakeFiles/linuxClient.dir/socketConsume.cpp.o.requires
-	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketConsume.cpp.o.provides.build
-.PHONY : CMakeFiles/linuxClient.dir/socketConsume.cpp.o.provides
+CMakeFiles/linuxClient.dir/socketCombined.cpp.o.provides: CMakeFiles/linuxClient.dir/socketCombined.cpp.o.requires
+	$(MAKE) -f CMakeFiles/linuxClient.dir/build.make CMakeFiles/linuxClient.dir/socketCombined.cpp.o.provides.build
+.PHONY : CMakeFiles/linuxClient.dir/socketCombined.cpp.o.provides
 
-CMakeFiles/linuxClient.dir/socketConsume.cpp.o.provides.build: CMakeFiles/linuxClient.dir/socketConsume.cpp.o
+CMakeFiles/linuxClient.dir/socketCombined.cpp.o.provides.build: CMakeFiles/linuxClient.dir/socketCombined.cpp.o
 
 
 CMakeFiles/linuxClient.dir/mainClient.cpp.o: CMakeFiles/linuxClient.dir/flags.make
@@ -156,7 +156,7 @@ CMakeFiles/linuxClient.dir/executioner.cpp.o.provides.build: CMakeFiles/linuxCli
 # Object files for target linuxClient
 linuxClient_OBJECTS = \
 "CMakeFiles/linuxClient.dir/main.cpp.o" \
-"CMakeFiles/linuxClient.dir/socketConsume.cpp.o" \
+"CMakeFiles/linuxClient.dir/socketCombined.cpp.o" \
 "CMakeFiles/linuxClient.dir/mainClient.cpp.o" \
 "CMakeFiles/linuxClient.dir/executioner.cpp.o"
 
@@ -164,7 +164,7 @@ linuxClient_OBJECTS = \
 linuxClient_EXTERNAL_OBJECTS =
 
 linuxClient: CMakeFiles/linuxClient.dir/main.cpp.o
-linuxClient: CMakeFiles/linuxClient.dir/socketConsume.cpp.o
+linuxClient: CMakeFiles/linuxClient.dir/socketCombined.cpp.o
 linuxClient: CMakeFiles/linuxClient.dir/mainClient.cpp.o
 linuxClient: CMakeFiles/linuxClient.dir/executioner.cpp.o
 linuxClient: CMakeFiles/linuxClient.dir/build.make
@@ -178,7 +178,7 @@ CMakeFiles/linuxClient.dir/build: linuxClient
 .PHONY : CMakeFiles/linuxClient.dir/build
 
 CMakeFiles/linuxClient.dir/requires: CMakeFiles/linuxClient.dir/main.cpp.o.requires
-CMakeFiles/linuxClient.dir/requires: CMakeFiles/linuxClient.dir/socketConsume.cpp.o.requires
+CMakeFiles/linuxClient.dir/requires: CMakeFiles/linuxClient.dir/socketCombined.cpp.o.requires
 CMakeFiles/linuxClient.dir/requires: CMakeFiles/linuxClient.dir/mainClient.cpp.o.requires
 CMakeFiles/linuxClient.dir/requires: CMakeFiles/linuxClient.dir/executioner.cpp.o.requires
 

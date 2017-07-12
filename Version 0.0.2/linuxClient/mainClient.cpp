@@ -15,7 +15,7 @@ void mainClient::setPort() {
     int port;
     cout << "\033[1;32m" << "[*] Set the target port: " << "\033[1;36m";
     cin >> port;
-    _sockCli.setPort(port);
+    _sockClient.setPort(port);
     cout << "\033[0m";
 }
 
@@ -24,14 +24,14 @@ void mainClient::setServer() {
     address = (char *) malloc(sizeof(char));
     cout << "\033[1;32m" << "[*] Set the target address: " << "\033[1;36m";
     cin >> address;
-    _sockCli.setServer(address);
+    _sockClient.setServer(address);
     cout << "\033[0m";
 }
 
 void mainClient::connectServer() {
     cout << "\033[1;32m" << "[+] Client Established" << "\033[0m" << endl;
     cout << "\033[1;32m" << "[*] Attempting to connect..." << "\033[0m" << endl;
-    _sockCli.connectServer();
+    _sockClient.connectServer();
 }
 
 void mainClient::serverResponder() {
@@ -40,12 +40,12 @@ void mainClient::serverResponder() {
     char standbyFlag[100] = "[+] Standby";
     char execFlag[100] = "[-] Suicide";
     executioner Terminator;
-    _sockCli.threadSend(dutyFlag)
-    while (_sockCli.threadReceive(buffer)) {
+    _sockClient.threadSend(dutyFlag);
+    while (_sockClient.threadReceive(buffer)) {
         if (!strcmp(buffer, execFlag)) {
             break;
         } else if (!strcmp(buffer, standbyFlag)) {
-            _sockCli.threadSend(dutyFlag);
+            _sockClient.threadSend(dutyFlag);
         } else {
             cout << "\033[1;31m" << "[-] Exception -- Unknown Command: " << "\033[1;33m" << buffer << "\033[0m"
                  << endl;

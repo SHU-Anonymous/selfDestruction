@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/main.c" "/Users/lixin/GitHub/selfDestruction/C Version/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/main.c.o"
+  "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/main.c" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/C Version/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
