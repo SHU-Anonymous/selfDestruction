@@ -1,0 +1,4 @@
+"/Users/lixin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3317.14/CLion 2017.2 EAP.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/cmake-build-debug
