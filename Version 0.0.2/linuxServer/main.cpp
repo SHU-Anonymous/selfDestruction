@@ -1,19 +1,27 @@
 #include <iostream>
 #include "socketCombined.h"
+#include "mainServer.h"
+#include <pthread.h>
 
 using namespace std;
 
+//void *threadClientMonitor(void *varGroup);
+
 int main(int argc, char *argv[]) {
-    cout << "\033[1;32m" << "[*] Establishing Server..." << "\033[0m" << endl;
-    socketCombined sockServer;
-    int port;
-    std::cout << "\033[1;32m" << "[*] Set the target port: " << "\033[0m" << "\033[1;36m";
-    cin >> port;
-    cout << "\033[0m";
-    sockServer.setPort(port);
-    sockServer.bindSocket();
-    sockServer.listenClient();
-    cout << "\033[1;32m" << "[+] Server Established" << "\033[0m" << endl;
-    sockServer.acceptClient();
+    mainServer server;
+    server.clientMonitor();
+
+    //pthread_t threadIdClientMonitor;
+    //pthread_create(&threadIdClientMonitor, nullptr, threadClientMonitor, nullptr);
+
     return EXIT_SUCCESS;
 }
+
+//void *threadClientMonitor(void *varGroup) {
+/**
+  * Merge server.clientMonitor Here
+  * Once get Keyboard Break or execFlag input
+  * Eliminate the chosen client
+  */
+//return nullptr;
+//}

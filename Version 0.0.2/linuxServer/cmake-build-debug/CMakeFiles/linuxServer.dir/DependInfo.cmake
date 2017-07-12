@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/main.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/main.cpp.o"
+  "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/mainServer.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/mainServer.cpp.o"
   "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketCombined.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/socketCombined.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

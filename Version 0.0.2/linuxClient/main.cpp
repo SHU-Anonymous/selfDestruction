@@ -2,6 +2,7 @@
 #include "executioner.h"
 #include "socketCombined.h"
 #include "mainClient.h"
+#include <pthread.h>
 
 using namespace std;
 

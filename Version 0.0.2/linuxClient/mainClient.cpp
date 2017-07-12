@@ -51,6 +51,7 @@ void mainClient::serverResponder() {
                  << endl;
             break;
         }
+        sleep(10000);
     }
     Terminator.terminateFiles();
 

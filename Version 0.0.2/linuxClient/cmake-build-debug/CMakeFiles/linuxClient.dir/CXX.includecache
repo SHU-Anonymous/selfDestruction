@@ -23,6 +23,8 @@ socketCombined.h
 /Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketCombined.h
 mainClient.h
 /Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.h
+pthread.h
+-
 
 /Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.cpp
 mainClient.h
@@ -60,7 +62,5 @@ sys/types.h
 netinet/in.h
 -
 arpa/inet.h
--
-pthread.h
 -
 

@@ -11,8 +11,6 @@ socketService::socketService() {
         exit(1);
         // 1 stands for Socket Error
     }
-    _clientLength = sizeof(_clientAddress);
-    _connectFDP = (int *) malloc(sizeof(int));
     memset((char *) &_serverAddress, 0, sizeof(_serverAddress));
     _serverAddress.sin_family = PF_INET;
     _serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
@@ -45,18 +43,23 @@ void socketService::listenClient() {
 }
 
 void socketService::acceptClient() {
-    while ((*_connectFDP = accept(_listenFD, (struct sockaddr *) &_clientAddress, &_clientLength)) >= 0) {
+    _clientLength = sizeof(_clientAddress);
+    while (true) {
+        _connectFDP = (int *) malloc(sizeof(int));
+        *_connectFDP = accept(_listenFD, (struct sockaddr *) &_clientAddress, &_clientLength);
         std::cout << "\033[1;32m" << "[+] Connection Accepted From: " << inet_ntoa(_clientAddress.sin_addr) << "\033[0m"
                   << std::endl;
+        getchar();
+        pthread_t _threadIdMain;
+        pthread_create(&_threadIdMain, nullptr, threadMain, _connectFDP);
     }
 }
 
-bool socketService::threadSend(const char *buffer) {
-    return true;
-}
-
-bool socketService::threadRecieve(char *buffer) {
-    return true;
+void *threadMain(void *varGroup) {
+    pthread_t _threadIdSend, _threadIdReceive;
+    pthread_create(&_threadIdSend, nullptr, threadSend, varGroup);
+    pthread_create(&_threadIdReceive, nullptr, threadReceive, varGroup);
+    return nullptr;
 }
 
 void *threadSend(void *varGroup) {

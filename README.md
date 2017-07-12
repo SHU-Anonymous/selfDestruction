@@ -3,4 +3,4 @@ Client and server communicates through the socket service. Once the client losts
 > Progress
 - [x] Basic Communication
 - [ ] Client Self Destruction
-- [ ] Server Elimination
+- [x] Server Elimination

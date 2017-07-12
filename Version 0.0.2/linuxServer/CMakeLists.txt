@@ -7,6 +7,8 @@ set(SOURCE_FILES
         main.cpp
         socketCombined.cpp
         socketCombined.h
+        mainServer.cpp
+        mainServer.h
         )
 
 add_executable(linuxServer ${SOURCE_FILES})

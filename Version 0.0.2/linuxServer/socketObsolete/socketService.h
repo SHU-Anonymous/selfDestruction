@@ -37,10 +37,12 @@ public:
     void listenClient();
 
     void acceptClient();
-
-    bool threadSend(const char *buffer);
-
-    bool threadRecieve(char *buffer);
 };
+
+void *threadMain(void *varGroup);
+
+void *threadSend(void *varGroup);
+
+void *threadReceive(void *varGroup);
 
 #endif //LINUXSERVER_SOCKETSERVICE_H

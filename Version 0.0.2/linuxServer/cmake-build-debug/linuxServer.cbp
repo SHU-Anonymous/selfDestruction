@@ -85,6 +85,12 @@
 		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/main.cpp">
 			<Option target="linuxServer"/>
 		</Unit>
+		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/mainServer.cpp">
+			<Option target="linuxServer"/>
+		</Unit>
+		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/mainServer.h">
+			<Option target="linuxServer"/>
+		</Unit>
 		<Unit filename="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketCombined.cpp">
 			<Option target="linuxServer"/>
 		</Unit>
