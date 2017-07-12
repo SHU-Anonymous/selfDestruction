@@ -7,5 +7,10 @@ set(SOURCE_FILES
         main.cpp
         socketConsume.cpp
         socketConsume.h
-        mainClient.cpp mainClient.h executioner.cpp executioner.h)
+        mainClient.cpp
+        mainClient.h
+        executioner.cpp
+        executioner.h
+        )
+
 add_executable(linuxClient ${SOURCE_FILES})

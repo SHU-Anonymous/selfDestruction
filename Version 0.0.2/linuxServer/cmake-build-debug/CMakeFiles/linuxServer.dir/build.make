@@ -43,10 +43,10 @@ RM = "/Users/lixin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer"
+CMAKE_SOURCE_DIR = "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/linuxServer.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/linuxServer.dir/flags.make
 
 CMakeFiles/linuxServer.dir/main.cpp.o: CMakeFiles/linuxServer.dir/flags.make
 CMakeFiles/linuxServer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/linuxServer.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxServer.dir/main.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/linuxServer.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxServer.dir/main.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/main.cpp"
 
 CMakeFiles/linuxServer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxServer.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/main.cpp" > CMakeFiles/linuxServer.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/main.cpp" > CMakeFiles/linuxServer.dir/main.cpp.i
 
 CMakeFiles/linuxServer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxServer.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/main.cpp" -o CMakeFiles/linuxServer.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/main.cpp" -o CMakeFiles/linuxServer.dir/main.cpp.s
 
 CMakeFiles/linuxServer.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/linuxServer.dir/main.cpp.o.provides.build: CMakeFiles/linuxServer.dir
 
 CMakeFiles/linuxServer.dir/socketService.cpp.o: CMakeFiles/linuxServer.dir/flags.make
 CMakeFiles/linuxServer.dir/socketService.cpp.o: ../socketService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linuxServer.dir/socketService.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxServer.dir/socketService.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/socketService.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linuxServer.dir/socketService.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxServer.dir/socketService.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketService.cpp"
 
 CMakeFiles/linuxServer.dir/socketService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxServer.dir/socketService.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/socketService.cpp" > CMakeFiles/linuxServer.dir/socketService.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketService.cpp" > CMakeFiles/linuxServer.dir/socketService.cpp.i
 
 CMakeFiles/linuxServer.dir/socketService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxServer.dir/socketService.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/socketService.cpp" -o CMakeFiles/linuxServer.dir/socketService.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketService.cpp" -o CMakeFiles/linuxServer.dir/socketService.cpp.s
 
 CMakeFiles/linuxServer.dir/socketService.cpp.o.requires:
 
@@ -105,19 +105,45 @@ CMakeFiles/linuxServer.dir/socketService.cpp.o.provides: CMakeFiles/linuxServer.
 CMakeFiles/linuxServer.dir/socketService.cpp.o.provides.build: CMakeFiles/linuxServer.dir/socketService.cpp.o
 
 
+CMakeFiles/linuxServer.dir/socketCombined.cpp.o: CMakeFiles/linuxServer.dir/flags.make
+CMakeFiles/linuxServer.dir/socketCombined.cpp.o: ../socketCombined.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/linuxServer.dir/socketCombined.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxServer.dir/socketCombined.cpp.o -c "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketCombined.cpp"
+
+CMakeFiles/linuxServer.dir/socketCombined.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxServer.dir/socketCombined.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketCombined.cpp" > CMakeFiles/linuxServer.dir/socketCombined.cpp.i
+
+CMakeFiles/linuxServer.dir/socketCombined.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxServer.dir/socketCombined.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/socketCombined.cpp" -o CMakeFiles/linuxServer.dir/socketCombined.cpp.s
+
+CMakeFiles/linuxServer.dir/socketCombined.cpp.o.requires:
+
+.PHONY : CMakeFiles/linuxServer.dir/socketCombined.cpp.o.requires
+
+CMakeFiles/linuxServer.dir/socketCombined.cpp.o.provides: CMakeFiles/linuxServer.dir/socketCombined.cpp.o.requires
+	$(MAKE) -f CMakeFiles/linuxServer.dir/build.make CMakeFiles/linuxServer.dir/socketCombined.cpp.o.provides.build
+.PHONY : CMakeFiles/linuxServer.dir/socketCombined.cpp.o.provides
+
+CMakeFiles/linuxServer.dir/socketCombined.cpp.o.provides.build: CMakeFiles/linuxServer.dir/socketCombined.cpp.o
+
+
 # Object files for target linuxServer
 linuxServer_OBJECTS = \
 "CMakeFiles/linuxServer.dir/main.cpp.o" \
-"CMakeFiles/linuxServer.dir/socketService.cpp.o"
+"CMakeFiles/linuxServer.dir/socketService.cpp.o" \
+"CMakeFiles/linuxServer.dir/socketCombined.cpp.o"
 
 # External object files for target linuxServer
 linuxServer_EXTERNAL_OBJECTS =
 
 linuxServer: CMakeFiles/linuxServer.dir/main.cpp.o
 linuxServer: CMakeFiles/linuxServer.dir/socketService.cpp.o
+linuxServer: CMakeFiles/linuxServer.dir/socketCombined.cpp.o
 linuxServer: CMakeFiles/linuxServer.dir/build.make
 linuxServer: CMakeFiles/linuxServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable linuxServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable linuxServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linuxServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +153,7 @@ CMakeFiles/linuxServer.dir/build: linuxServer
 
 CMakeFiles/linuxServer.dir/requires: CMakeFiles/linuxServer.dir/main.cpp.o.requires
 CMakeFiles/linuxServer.dir/requires: CMakeFiles/linuxServer.dir/socketService.cpp.o.requires
+CMakeFiles/linuxServer.dir/requires: CMakeFiles/linuxServer.dir/socketCombined.cpp.o.requires
 
 .PHONY : CMakeFiles/linuxServer.dir/requires
 
@@ -135,6 +162,6 @@ CMakeFiles/linuxServer.dir/clean:
 .PHONY : CMakeFiles/linuxServer.dir/clean
 
 CMakeFiles/linuxServer.dir/depend:
-	cd "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxServer/cmake-build-debug/CMakeFiles/linuxServer.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/linuxServer.dir/depend
 

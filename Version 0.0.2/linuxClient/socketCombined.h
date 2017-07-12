@@ -1,9 +1,9 @@
 //
-// Created by 李欣 on 2017/7/11.
+// Created by 李欣 on 2017/7/12.
 //
 
-#ifndef LINUXSERVER_SOCKETSERVICE_H
-#define LINUXSERVER_SOCKETSERVICE_H
+#ifndef SOCKETCOMBINED_H
+#define SOCKETCOMBINED_H
 
 #include <iostream>
 #include <cstdio>
@@ -18,7 +18,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
-class socketService {
+class socketCombined {
 private:
     int _listenFD;
     struct sockaddr_in _serverAddress;
@@ -26,23 +26,26 @@ private:
     socklen_t _clientLength;
     int *_connectFDP;
 public:
-    socketService();
+    socketCombined();
 
-    ~socketService();
+    ~socketCombined();
 
     void setPort(int Port);
 
+    void setServer(const char *Address);
+
     void bindSocket();
+
+    void connectServer();
 
     void listenClient();
 
     void acceptClient();
+
+    bool threadSend(const char *buffer);
+
+    bool threadRecieve(char *buffer);
 };
 
-void *threadMain(void *varGroup);
 
-void *threadSend(void *varGroup);
-
-void *threadReceive(void *varGroup);
-
-#endif //LINUXSERVER_SOCKETSERVICE_H
+#endif //SOCKETCOMBINED_H

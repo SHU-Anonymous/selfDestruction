@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/executioner.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/executioner.cpp.o"
-  "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/main.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/main.cpp.o"
-  "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/mainClient.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/mainClient.cpp.o"
-  "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/socketConsume.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.1/CPP Version/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/socketConsume.cpp.o"
+  "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/executioner.cpp.o"
+  "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/main.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/main.cpp.o"
+  "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/mainClient.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/mainClient.cpp.o"
+  "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/socketConsume.cpp" "/Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/cmake-build-debug/CMakeFiles/linuxClient.dir/socketConsume.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

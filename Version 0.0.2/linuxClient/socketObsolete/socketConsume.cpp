@@ -5,14 +5,14 @@
 #include "socketConsume.h"
 
 socketConsume::socketConsume() {
-    _clientFDP = (int *) malloc(sizeof(int));
-    *_clientFDP = socket(PF_INET, SOCK_STREAM, 0);
+    _connectFDP = (int *) malloc(sizeof(int));
+    *_connectFDP = socket(PF_INET, SOCK_STREAM, 0);
     memset((char *) &_serverAddress, 0, sizeof(_serverAddress));
     _serverAddress.sin_family = PF_INET;
 }
 
 socketConsume::~socketConsume() {
-    shutdown(*_clientFDP, SHUT_RDWR);
+    shutdown(*_connectFDP, SHUT_RDWR);
 }
 
 void socketConsume::setPort(int Port) {
@@ -24,7 +24,7 @@ void socketConsume::setServer(const char *Address) {
 }
 
 void socketConsume::connectServer() {
-    if (connect(*_clientFDP, (struct sockaddr *) &_serverAddress, sizeof(_serverAddress)) < 0) {
+    if (connect(*_connectFDP, (struct sockaddr *) &_serverAddress, sizeof(_serverAddress)) < 0) {
         perror("Connection Error");
         exit(2);
         // 2 stands for Connection Error
@@ -33,9 +33,9 @@ void socketConsume::connectServer() {
 }
 
 bool socketConsume::threadSend(const char *buffer) {
-    return send(*_clientFDP, buffer, 100, 0) >= 0;
+    return send(*_connectFDP, buffer, 100, 0) >= 0;
 }
 
 bool socketConsume::threadReceive(char *buffer) {
-    return recv(*_clientFDP, buffer, 100, 0) >= 0;
+    return recv(*_connectFDP, buffer, 100, 0) >= 0;
 }
