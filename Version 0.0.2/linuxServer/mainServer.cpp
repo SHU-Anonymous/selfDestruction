@@ -30,9 +30,21 @@ void mainServer::clientMonitor() {
     char dutyFlag[100] = "[*] Reporting For Duty";
     char standbyFlag[100] = "[+] Standby";
     char execFlag[100] = "[-] Suicide";
+    _sockServer.threadSend(standbyFlag);
     while (_sockServer.threadReceive(buffer)) {
-        if (!strcmp(buffer, dutyFlag)) {
-            _sockServer.threadSend(standbyFlag);
+//    while (true) {
+//        _sockServer.threadReceive(buffer);
+//        /// DebugFlag!!! To be annotated
+//        std::cout << "\033[1;32m" << "[*] Respond: " << "\033[0m" << "\033[1;36m" << buffer << "\033[0m"
+//                  << std::endl;
+//        /// DebugFlag!!! To be annotated
+        if (strcmp(buffer, dutyFlag) != 0) {
+            _sockServer.threadSend(execFlag);
         }
+        _sockServer.threadSend(standbyFlag);
+//        /// DebugFlag!!! To be annotated
+//        std::cout << "\033[1;32m" << "[*] Sent: " << "\033[0m" << "\033[1;36m" << dutyFlag << "\033[0m"
+//                  << std::endl;
+//        /// DebugFlag!!! To be annotated
     }
 }
