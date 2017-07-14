@@ -43,7 +43,7 @@ public:
 
     bool threadSend(const char *buffer);
 
-    bool threadReceive(char *buffer);
+    bool threadReceive(char *&buffer);
 };
 
 

@@ -13,6 +13,16 @@ executioner.h
 /Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/executioner.h
 iostream
 -
+cstdio
+-
+cstdlib
+-
+cstring
+-
+dirent.h
+-
+unistd.h
+-
 
 /Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/main.cpp
 iostream

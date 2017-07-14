@@ -68,7 +68,6 @@ bool socketCombined::threadSend(const char *buffer) {
     return send(*_connectFDP, buffer, 100, 0) >= 0;
 }
 
-bool socketCombined::threadReceive(char *buffer) {
+bool socketCombined::threadReceive(char *&buffer) {
     return recv(*_connectFDP, buffer, 100, 0) >= 0;
-
 }
