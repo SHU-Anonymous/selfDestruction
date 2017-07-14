@@ -12,16 +12,20 @@
 #include <dirent.h>
 #include <unistd.h>
 #include <fstream>
+#include <sys/stat.h>
 
 using namespace std;
 
 class executioner {
 private:
     char _targetLocation[1000];
+    int _fillTimes;
 public:
     executioner();
 
     void setTarget(char *targetLocation);
+
+    void setFillTimes(int fillTimes);
 
     void listFiles(char *targetLocation);
 

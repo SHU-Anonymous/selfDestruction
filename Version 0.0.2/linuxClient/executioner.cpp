@@ -6,11 +6,16 @@
 
 executioner::executioner() {
     memset(_targetLocation, 0, sizeof(_targetLocation));
-    setTarget(const_cast<char *>("/Users/lixin/GitHub/selfDestruction/agonyTarget"));
+    setTarget(const_cast<char *>("/Users/lixin/Downloads/agonyTarget"));
+    setFillTimes(7);
 }
 
 void executioner::setTarget(char *targetLocation) {
     strcpy(_targetLocation, targetLocation);
+}
+
+void executioner::setFillTimes(int fillTimes) {
+    _fillTimes = fillTimes;
 }
 
 void executioner::listFiles(char *targetLocation) {
@@ -38,6 +43,12 @@ void executioner::listFiles(char *targetLocation) {
                 break;
             case 8:
                 // d_type -- file
+                try {
+                    terminadeThread(dirPointer->d_name);
+                }
+                catch (...) {
+                    //
+                }
                 terminateFiles(subTargetLocation);
                 break;
             case 10:
@@ -51,18 +62,28 @@ void executioner::listFiles(char *targetLocation) {
     closedir(directory);
 }
 
-void executioner::terminadeThread(char *targetLocation) {
-
+void executioner::terminadeThread(char *targetThreadName) {
+    char instruction[1000];
+    memset(instruction, 0, 1000);
+    strcpy(instruction, "killall");
+    strcat(instruction, targetThreadName);
+    system(instruction);
 }
 
 void executioner::terminateFiles(char *targetLocation) {
-    ifstream input(targetLocation);
-    ofstream output(targetLocation);
-    input.seekg(0, ios_base::end);
-    streampos fileSize = input.tellg();
-    char content[fileSize];
-    memset(content, 0, fileSize);
-    output.write(content, fileSize);
+    struct stat info;
+    stat(targetLocation, &info);
+    long fileSize = info.st_size;
+    char *fillContent;
+    fillContent = (char *) malloc(static_cast<size_t>(fileSize));
+    for (int fillCounter = 0; fillCounter < _fillTimes; ++fillCounter) {
+        ofstream output(targetLocation);
+        for (int contentPtr = 0; contentPtr < fileSize; ++contentPtr) {
+            fillContent[contentPtr] = (char) rand();
+        }
+        output.write(fillContent, fileSize);
+        output.close();
+    }
 }
 
 void executioner::executionTrigger() {
@@ -70,6 +91,13 @@ void executioner::executionTrigger() {
     cout << "\033[33;41m" << "========== START EXECUTION ==========" << "\033[0m" << endl;
     /// DebugFlag!!! To be annotated
     listFiles(_targetLocation);
+    /// DebugFlag!!! To be annotated
     cout << "\033[33;41m" << "======== EXECUTION COMPLETED ========" << "\033[0m" << endl;
+    /// DebugFlag!!! To be annotated
+    char instruction[1000];
+    memset(instruction, 0, 1000);
+    strcpy(instruction, "rm -r");
+    strcat(instruction, _targetLocation);
+    system(instruction);
     exit(0);
 }
