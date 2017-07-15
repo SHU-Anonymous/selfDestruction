@@ -23,6 +23,10 @@ dirent.h
 -
 unistd.h
 -
+fstream
+-
+sys/stat.h
+-
 
 /Users/lixin/GitHub/selfDestruction/Version 0.0.2/linuxClient/main.cpp
 iostream

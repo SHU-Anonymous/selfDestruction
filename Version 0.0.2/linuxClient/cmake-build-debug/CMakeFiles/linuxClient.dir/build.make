@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/lixin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3317.14/CLion 2017.2 EAP.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/lixin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3317.49/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/lixin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3317.14/CLion 2017.2 EAP.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/lixin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3317.49/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =

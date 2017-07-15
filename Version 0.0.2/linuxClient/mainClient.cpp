@@ -70,11 +70,6 @@ void mainClient::serverResponder() {
         sleep(100);
     }
     _agonyTerminator.executionTrigger();
-
-    /**
-      *
-      */
-
 }
 
 //void mainClient::serverResponder() {
